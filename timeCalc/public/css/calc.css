@@ -1,0 +1,72 @@
+body{
+    line-height: 35px;
+   
+}
+
+.content{
+      margin: auto;
+    width: 60%;
+    
+    padding: 10px;
+    text-align: center;
+}
+#btnClear{
+     position: fixed;
+    margin: auto;
+    left: 1;
+    right: 0;
+    top: 0;
+    bottom: 1;
+    margin-top: 35px;
+   margin-right: 25px;
+}
+
+h2{
+    text-align: center;
+}
+.rekenen{
+     margin: auto;
+    width: 60%;
+    
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width:100px;
+    margin-top: 2px;
+}
+
+td{
+    width: 50%;
+}
+.comment{
+    width: 10%;
+}
+
+#choiceFormat{
+      position: fixed;
+    margin: auto;
+    left: 0;
+    right: 1;
+    top: 0;
+    bottom: 1;
+    margin-top: 100px;
+   margin-left: 25px;
+}
+
+#choiceTyping{
+    position: fixed;
+    margin: auto;
+    left: 1;
+    right: 0;
+    top: 0;
+    bottom: 1;
+    margin-top: 100px;
+   margin-right: 25px;
+   
+    text-align: right;
+}
+
+
+

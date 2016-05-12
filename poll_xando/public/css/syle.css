@@ -1,0 +1,370 @@
+/*all polls*/
+#addPoll{
+        float:right;
+        padding-right: 15px;
+        padding-top: 15px;
+}
+/*stop*/
+
+/*.side ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    background-color: #f1f1f1;
+}
+
+.side li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover 
+.side li a:hover {
+    background-color: #555;
+    color: white;
+}*/
+
+
+/*voor dragsort*/
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.example li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ol.example li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}
+
+/*poll layout*/
+
+.pollTable{
+    width:30%;
+    
+}
+.completed{
+    color: red;
+}
+.pollRadio{
+    width: 1%;
+}
+
+.pollTitle{
+   margin: 0; padding: 0; 
+}
+
+
+/*comment section*/
+.clear {  
+clear:both;  
+}  
+
+#wrapper {  
+width:480px;  
+margin:0px auto;  
+padding:15px 0px;  
+}  
+
+.comment {  
+padding:5px;  
+border-left:2px solid rgba(51, 122, 183, 0.35);  
+border-top:2px solid rgba(51, 122, 183, 0.35);  
+margin-top:15px;  
+list-style:none;  
+}  
+
+.aut {  
+font-weight:bold;  
+}  
+
+.timestamp {  
+font-size:85%;  
+float:rightright;  
+}  
+
+#comment_form {  
+margin-top:15px;  
+}  
+
+#comment_form input {  
+font-size:1.2em;  
+margin:0 0 10px;  
+padding:3px;  
+display:block;  
+width:100%;  
+}  
+
+#comment_body {  
+display:block;  
+width:100%;  
+height:150px;  
+}  
+
+#submit_button {  
+text-align:center;   
+clear:both;  
+}  
+.theform{
+    display:none;
+}
+
+
+.adminPanelPoll{
+  padding:10px;
+}
+.adminPanelPoll ul{
+    list-style-type: none;
+}
+.commentsPoll{
+  padding: 10px;
+}
+
+/*create poll*/
+.createPoll ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/*forum*/
+/*create category*/
+.createCat label{
+  margin-left: 15px;
+}
+#links{
+        margin:10px;
+    }
+
+.createCat textarea{
+  margin-left: 15px;
+  width: 70%;
+}
+.createCat h2{
+  margin: 10px;
+}
+.createCat input[type=submit]{
+  margin-left: 15px;
+   margin-bottom: 15px;
+}
+
+/*topic detail*/
+#commentBtn{
+    margin-top: 5px;
+}
+#comments{
+    padding:5px;
+}
+#topicnav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:auto;
+    width:auto;
+    float:left;
+    padding:5px; 
+}
+ #topiccontent {
+        padding:10px; 
+        min-height: 80px;
+        overflow: hidden;
+        width:auto;
+                
+    }
+/*admin dashboard*/
+/*pages*/
+.pages h3{
+  padding: 10px;
+}
+.pages h5{
+  padding: 10px;
+}
+#btnSubmit,h3{
+  margin: 10px;
+    
+}
+#eigenMail{
+  width: 30%;
+  margin: 10px;
+}
+#pagewrapper{ 
+  width: 80%;
+  
+  
+  /*width:480px;  */
+margin:0px auto;  
+padding:15px 0px;  
+}
+
+/*create page*/
+#the-form{
+    height: auto;
+    border:1px solid black; 
+}
+/*chat*/
+#message
+	{
+		text-align: center;
+		padding: 0px;
+		width: 340px;
+		margin:3px auto;
+	}
+#textareamsg
+{
+		padding: 4px;
+		float: left;
+		margin-right: 5px; 
+		text-decoration: none;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 50px;
+    background: #fafafa;
+    border: none;
+    padding-bottom: 10px;
+    color: #666;
+    font-weight: 400;
+}
+#sender{
+    background-color: #d9d9d9;
+    float:left;
+    clear: left;
+    width: 51%;
+}
+#self{
+    float:right;
+    clear: right;
+    width: 51%;
+}
+
+#chatcontent
+	{
+		margin: 0 auto;
+		height: 400px;
+		width: 100%;
+		border: 1px solid #cfcfcf;
+		border-radius: 5px 5px 0 0;
+		/*padding: 20px;*/
+		overflow: auto;
+	}
+
+#chatcontent > p
+	{
+		padding: 10px;
+		border: 1px solid #ccc;
+		/*border-radius: 5px;*/
+		/*background-color: #e3ffd6;*/
+		text-align: center;
+		margin: 7px 0;
+	}
+#chatcontent > p.other
+	{
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #a9a9a9 !important; 
+		text-align: center;
+		margin: 7px 0; 
+        
+	}
+/*users dashboard*/
+ #searchUser, #searchPoll{
+        padding-left: 15px;
+    }
+#searchUser, #searchPoll a{
+        padding-top: 10px;
+    }
+
+  /* USER PROFILE PAGE */
+ .card {
+    padding: 60px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 130px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .useravatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 20px;
+    line-height: 1;
+    color: #262626;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+ 

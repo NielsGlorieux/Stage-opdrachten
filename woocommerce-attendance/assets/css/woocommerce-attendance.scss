@@ -1,0 +1,104 @@
+/**
+ * Imports
+ */
+@import '../../../woocommerce/assets/css/_mixins';
+
+.attendance {
+  >.ab-item:before {
+    content: '\f484'; // Change to a Dashicon of your choice
+    top: 3px;
+  }
+}
+
+.wp-list-table {
+  .column-attended {
+    width: 25px;
+    .no {
+      color: darkred;
+      border-color: darkred;
+      font-size: smaller;
+    }
+    .yes {
+      color: forestgreen;
+      border-color: forestgreen;
+      font-size: smaller;
+    }
+  }
+  .column-actions {
+    width: 10em;
+
+    .actions {
+      display: inline-block;
+      position: relative;
+      padding: 0 !important;
+      height: 2em !important;
+      width: 2em;
+      margin: 0 3px;
+
+      &:after {
+        font-family: 'WooCommerce';
+        speak: none;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+        text-indent: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 1.85;
+      }
+      &.no:after {
+        content: "\e602";
+      }
+      &.yes:after {
+        content: "\e015";
+      }
+      &.print-tag:after {
+        content: "\e026";
+      }
+      &.print-cert:after {
+        content: "\e02b";
+      }
+      &.send-email:after {
+        content: "\e02d";
+      }
+    }
+  }
+}
+
+dl {
+  width: 300px;
+  padding: 5px 15px;
+
+  dt, dd {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  dt {
+    &:not(:first-of-type) {
+      margin-left: 50px;
+    }
+  }
+  dd {
+
+  }
+}
+
+.pull-right {
+  float: right;
+  display: inline-block;
+}
+
+.tablenav.top {
+  display: none;
+}
+
+

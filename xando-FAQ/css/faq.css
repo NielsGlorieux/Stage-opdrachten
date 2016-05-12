@@ -1,0 +1,55 @@
+details {
+    border-radius: 3px;
+    background: #EEE;
+}
+
+details summary {
+    font-size: 17px;
+    vertical-align: top;
+    background: #333;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    outline: none;
+    margin-bottom: 2px;
+}
+
+details[open] summary {
+    background: #69c773;
+    color: #333;
+   
+}
+
+/* Hide the default marker. */    
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Add the custom marker in the default state. */    
+details summary:before {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    content: "";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-icon-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+/* Move the sprite image when the details box is open. */
+details[open] summary:before {
+    background-position: -18px 0;
+}
+
+details.leeg summary{
+    background: #b30000	;
+}
+
+details[open].leeg summary {
+    color: #ffffff;
+}
+
+field { font-family:arial, sans-serif; border-color: #d9d9d9; border-top:solid 1px #c0c0c0; }
+input.field{width:100%}
+

@@ -1,0 +1,43 @@
+.table {
+    border-collapse: collapse;
+     border: none;
+}
+
+.table table{
+     table-layout: auto;
+}
+.table td.absorbing-column {
+    width: 100%;
+}
+
+.table th, td {
+    text-align: left;
+    padding: 8px;
+    border: none; 
+}
+
+.table th{
+    background-color: #676767;
+    color: white;
+    display:none;
+}
+.table td{
+    color: grey;
+    
+    border: none;
+    width: auto;
+}
+
+.table{
+    width:100%;
+}
+
+.table td:last-child{
+    width:100%;
+}
+
+.table a{
+    color: #9e0b0f;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2}

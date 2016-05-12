@@ -1,0 +1,172 @@
+# Copyright (C) 2016 Ultraness
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-02-24 12:52+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"Project-Id-Version: Stable (latest release)\n"
+"POT-Creation-Date: \n"
+"Language-Team: \n"
+"Last-Translator: \n"
+"Language: nl\n"
+
+msgid "More plugins from Ultraness"
+msgstr ""
+
+msgid ""
+"Please make sure that the %s plugin, with at least version %s, is installed "
+"and activated before trying to install the WooCommerce Attendance plugin."
+msgstr ""
+"Zorg ervoor dat de %s plugin, met op zijn minst versie %s geïnstalleerd en "
+"geactiveerd is alvorens u de WooCommerce Attendance plugin installeert."
+
+msgid "Attendance"
+msgstr "Aanwezigheid"
+
+msgid "Attendances"
+msgstr "Aanwezigen"
+
+msgid "Attendee"
+msgstr "Aanwezige"
+
+msgid "Attendees"
+msgstr "Aanwezigen"
+
+msgid "Attendees per page:"
+msgstr "Aanwezigen per pagina:"
+
+msgid "Events per page:"
+msgstr "Events per pagina:"
+
+msgid "Back"
+msgstr "Terug"
+
+msgid "Attended"
+msgstr "Was aanwezig"
+
+msgid "Set to:"
+msgstr "Zet op:"
+
+msgid "Did not attend"
+msgstr "Was niet aanwezig"
+
+msgid "No attendees found."
+msgstr "Geen aanwezigen gevonden."
+
+msgid "No events found."
+msgstr "Geen events gevonden."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "First Name"
+msgstr "Voornaam"
+
+msgid "Last Name"
+msgstr "Familienaam"
+
+msgid "Company"
+msgstr "Bedrijf"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "City"
+msgstr "Stad"
+
+msgid "State"
+msgstr "Staat"
+
+msgid "Postcode"
+msgstr "Postcode"
+
+msgid "Actions"
+msgstr "Acties"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "search"
+msgstr "zoek"
+
+msgid "Show only:"
+msgstr "Toon enkel:"
+
+msgid "Print Name Tag"
+msgstr "Print Name Tag"
+
+msgid "Print Certificate"
+msgstr "Print Certificaat"
+
+msgid "Send Email"
+msgstr "Verstuur Email"
+
+msgid "Your cart already holds \"%s\"."
+msgstr "Uw karretje houdt al \\\"%s\\\"."
+
+msgid ""
+"Your cart already holds \"%s\". Please remove it if you want to add \"%s\"."
+msgstr ""
+"Uw karretje bevat al \"%s\". Gelieve het voorwerp te verwijderen als u \"%s"
+"\" wilt toevoegen."
+
+msgid "Email Template"
+msgstr "Email Sjabloon"
+
+msgid "Message"
+msgstr "Boodschap"
+
+msgid "Save Template"
+msgstr "Sjabloon Opslaan"
+
+msgid "Email Template attended"
+msgstr "Email Sjabloon aanwezigen"
+
+msgid "Email Template not attended"
+msgstr "Email Sjabloon afwezigen"
+
+msgid "id"
+msgstr "id"
+
+msgid "slug"
+msgstr "slug"
+
+msgid "title"
+msgstr "titel"
+
+msgid "last_name"
+msgstr "familienaam"
+
+msgid "first_name"
+msgstr "voornaam"
+
+msgid "company"
+msgstr "bedrijf"
+
+msgid "email"
+msgstr "email"
+
+msgid "country"
+msgstr "land"
+
+msgid "address"
+msgstr "adres"
+
+msgid "city"
+msgstr "stad"
+
+msgid "state"
+msgstr "staat"
+
+msgid "postcode"
+msgstr "postcode"

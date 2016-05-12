@@ -1,0 +1,7 @@
+.content { 
+    border-bottom-style: dashed ; 
+    border-bottom-color: black; 
+    border-bottom-width: 2px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
