@@ -40,7 +40,7 @@
         <div id='pagewrapper' class="col-md-15 col-md-offset-1"> 
             <div class="panel panel-default">
                 <div class="panel-heading">Edit <?php echo $page->title ?></div>
-                    <a href='/admin/pages' class='btn btn-primary' id='naarDash' style='margin:15px;'>Ga naar dashboard</a>
+                    <a href='/admin/pages' class='btn btn-primary' id='naarDash' style='margin:15px;'>Go to dashboard</a>
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
                             <ul>
@@ -100,11 +100,11 @@
                         <?php
                         echo Form::open(array('action' => 'PageController@edit'));
                         echo Form::hidden('oldSlug', $page->slug);
-                        echo Form::label('', 'Slug van de pagina (wordt de url)'); ?> <br> <?php
+                        echo Form::label('', 'Slug of the page (becomes the url)'); ?> <br> <?php
                         echo Form::text('slug', $page->slug, array('class'=>'form-control'));
-                        echo Form::label('', 'Title van de pagina'); ?> <br> <?php
+                        echo Form::label('', 'Title of the page'); ?> <br> <?php
                         echo Form::text('title', $page->title, array('class'=>'form-control')); ?> <br> <?php
-                        echo Form::label('', 'De content van de pagina'); ?> <br> <?php
+                        echo Form::label('', 'The content of the page'); ?> <br> <?php
                         echo Form::textarea('content', $page->content, array('class' => '')); ?> <br> <?php
                         echo Form::submit('Edit page',array('name'=>'btnSubmit','id'=>'btnSubmit','class'=>'btn btn-primary'));
                         echo Form::close(); 
@@ -133,18 +133,18 @@
                             echo Form::open(array('action' => 'PageController@edit', 'id'=>'sendForm'));
                             echo Form::hidden('oldSlug', $page->slug);
                             echo Form::hidden('contentb', null, array('id'=>'contentb')); ?> <br> <?php
-                            echo Form::label('', 'Slug van de pagina (wordt de url)'); ?> <br> <?php
+                            echo Form::label('', 'Slug of the page (becomes the url)'); ?> <br> <?php
                             echo Form::text('slug', $page->slug, array('class'=>'form-control')) ?> <br> <?php
-                            echo Form::label('', 'Title van de pagina'); ?> <br> <?php
+                            echo Form::label('', 'Title of the page'); ?> <br> <?php
                             echo Form::text('title', $page->title, array('class'=>'form-control')); ?> <br> <?php
-                            echo Form::label('', 'De content van de pagina');
+                            echo Form::label('', 'The content of the page');
                             ?>   
                             <textarea name="contentbox" id='contentbox'><?php echo $decodeContent ?></textarea>
                             <?php 
                             echo Form::submit('Edit page',array('name'=>'btnSubmit','id'=>'btnSubmit','class'=>'btn btn-primary'));
                             echo Form::close(); 
                             ?>
-                            <h3>Wordt gemaild naar</h3>
+                            <h3>Gets send to</h3>
                             <input type='text' id='eigenMail' class='form-control' placeholder='<?php echo $mail?>' value='<?php echo $mail?>'></input>
                         </div>
                     <!--STYLE moet hier blijven want mag enkel gebruikt worden als dit een form page is-->

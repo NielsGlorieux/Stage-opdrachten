@@ -6,7 +6,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">User forum - Topics of <?php echo $cat->name?></div>
                 <div id='links'>
-                    <a href='/forum/categories'>Ga terug naar categorieën</a><br>
+                    <a href='/forum/categories'>Go back to categories</a><br>
                     <?php if(Auth::check()){ ?>
                     <a href="/forum/categories/<?php echo $cat->id;?>/create">Create a topic</a><br>
                     <?php } ?>
@@ -17,7 +17,7 @@
                 <table class="table table-striped table-bordered sorted_table" style="width:100%">
                     <tr>
                         <th>Topic</th>
-                        <th>Aangemaakt door</th>
+                        <th>Posted by</th>
                         <?php
                         if(Auth::check() && Auth::user()->is('admin') == true){
                             echo '<th>Actions</th>';

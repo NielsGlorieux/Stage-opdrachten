@@ -2,7 +2,7 @@
     <tr>
         <th>Title</th>
         <th>From</th>
-        <th>Gelezen</th>
+        <th>Has been seen</th>
     </tr>
      <?php foreach($messages as $m){
        ?>
@@ -26,9 +26,9 @@
         ?></td>
         <td><?php
             if($m->gelezen == true){
-                echo 'ja';
+                echo 'yes';
             }else{
-                echo 'nee';
+                echo 'no';
             }
             ?>
          </td>

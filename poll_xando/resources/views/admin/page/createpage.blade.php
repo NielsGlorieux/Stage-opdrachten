@@ -6,16 +6,16 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Create a page</div>
                 <div class="panel-body">
-                  <label for='contactCheck'><input type="checkbox" id='contactCheck' name="contactCheck" style="float: left; margin-top: 5px;"> Deze pagina is een contact formulier</label> 
+                  <label for='contactCheck'><input type="checkbox" id='contactCheck' name="contactCheck" style="float: left; margin-top: 5px;"> This page is a contact form</label> 
                     <div id='contactSettings'>
                         <?php
                         echo Form::open(array('action' => 'PageController@create', 'id'=>'sendForm'));
                         echo Form::hidden('isForm','1');
-                        echo Form::label('', 'Slug van de pagina (wordt de url)');
+                        echo Form::label('', 'Slug of the page (becomes the url)');
                         echo Form::text('slug',null, array('class'=>'form-control')); 
-                        echo Form::label('', 'Title van de pagina');
+                        echo Form::label('', 'Title of the page');
                         echo Form::text('title',null, array('class'=>'form-control'));
-                        echo Form::label('', 'De content van de pagina'); ?>    
+                        echo Form::label('', 'The content of the page'); ?>    
                         <?php
                         echo Form::hidden('content', null, array('id'=>'content')); ?> <br> <?php
                         echo Form::submit('Create formpage',array('name'=>'btnSubmit','id'=>'btnSubmit','class'=>'btn btn-primary'));
@@ -54,18 +54,18 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <h3>Wordt gemaild naar</h3>
+                        <h3>Gets send to</h3>
                         <input type='text' id='eigenMail'></input>
                     </div>
                     <div id='normalPage'>
                         <?php
                         echo Form::open(array('action' => 'PageController@create'));
                         echo Form::hidden('isForm','0');
-                        echo Form::label('', 'Slug van de pagina (wordt de url)'); 
+                        echo Form::label('', 'Slug of the page (becomes the url)'); 
                         echo Form::text('slug',null, array('class'=>'form-control')); 
-                        echo Form::label('', 'Title van de pagina'); 
+                        echo Form::label('', 'Title of the page'); 
                         echo Form::text('title',null, array('class'=>'form-control')); 
-                        echo Form::label('', 'De content van de pagina'); 
+                        echo Form::label('', 'The content of the page'); 
                         echo Form::textarea('content', null, array('class' => '','id'=>'normalContent')); ?><br><?php
                         echo Form::submit('Create page',array('class'=>'btn btn-primary'));
                         echo Form::close(); 

@@ -26,7 +26,7 @@
                         <div class="card hovercard"> 
                             <div class="card-info"> 
                                 <span class="card-title"><?php echo $user->name?></span>
-                                <span class="card-title">status: <?php if($user->is('admin') == true){
+                                <span class="card-title">Role: <?php if($user->is('admin') == true){
                                     echo 'Admin';
                                     }else{
                                     echo 'User';
@@ -51,7 +51,7 @@
                             <div class="btn-group" role="group">
                                 <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
                                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                    <div class="hidden-xs">Zoek naar anderen</div>
+                                    <div class="hidden-xs">Search for others</div>
                                 </button>
                             </div>
                                 <?php }?>

@@ -13,7 +13,7 @@
                     $message->save();
                    ?>
                 <div class="panel-body">
-                    <p>Beantwooren:</p>
+                    <p>Answer:</p>
                       @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <ul id="err">

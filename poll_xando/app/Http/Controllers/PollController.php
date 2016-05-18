@@ -64,8 +64,8 @@ class PollController extends Controller
             $poll->options()->save($option1);
         }  
         
-        return redirect()->action('PollController@showPoll', [$poll->id]);
-
+        // return redirect()->action('PollController@showPoll', [$poll->id]);
+        return back();
     }
     
     

@@ -25,7 +25,7 @@
                     <div id="message">
                         <form id="userarea">
                         <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-                        <input  class='form-control textarea' id="textareamsg" name="messages" rows="2" cols="30" required="" placeholder="Typ een bericht.."></input>
+                        <input  class='form-control textarea' id="textareamsg" name="messages" rows="2" cols="30" required="" placeholder="Type a message.."></input>
                         </form>
                     </div>
                 </div>

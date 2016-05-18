@@ -12,7 +12,7 @@
                 </div>
                 <meta name="csrf-token" content="{{ csrf_token() }}">               
                 <h3>Edit pages and Navigation</h3>
-                <h5><i>Versleep de pagina's in de tabel om hun positie te veranderen in het navigatie menu.</i></h5>
+                <h5><i>Drag the pages in the table to change their position in the navigation menu.</i></h5>
                 <table id="sortFixed" class="grid table table-striped table-bordered sorted_table">
                     <thead>
                         <tr>

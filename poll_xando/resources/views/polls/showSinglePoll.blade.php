@@ -93,14 +93,14 @@
                      <table class="table table-sm">
                         <thead>
                             <tr>
-                                <th>Actie</th>
-                                <th>Uitvoeren</th>
-                                <th>Huidige instelling</th>
+                                <th>Action</th>
+                                <th>Carry out</th>
+                                <th>Current setting</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Zet comments aan/af</th>
+                                <th scope="row">Enable comments</th>
                                 <th> 
                                     <?php
                                     echo Form::open(array('action' => array('AdminController@disableComments', $poll->id)));
@@ -115,7 +115,7 @@
                                 </th>
                             </tr>
                             <tr>
-                                <th scope="row">Stel maximum aantal votes in</th>
+                                <th scope="row">Maximal amount of votes (-1 for infinite)</th>
                                 <td>
                                     <?php
                                     echo Form::open(array('action' => array('AdminController@setMaxVotes', $poll->id)));
@@ -130,7 +130,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">Stel maximum level van comments in (1-..)</th>
+                                <th scope="row">Maximal level of nested comments(1-..)</th>
                                 <td>
                                    <?php    
                                     echo Form::open(array('action' => array('AdminController@setMaxLevel', $poll->id)));

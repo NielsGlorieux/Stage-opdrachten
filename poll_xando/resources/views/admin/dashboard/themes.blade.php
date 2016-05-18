@@ -21,7 +21,7 @@
                     }else{
                         echo Form::radio('chosenTheme', '' );
                     }
-                    echo Form::label('', 'Geen theme'); ?> <br> <?php
+                    echo Form::label('', 'No theme'); ?> <br> <?php
                     echo Form::submit('Change theme', array('class'=>'btn btn-primary'));
                     echo Form::close();           
                     ?>

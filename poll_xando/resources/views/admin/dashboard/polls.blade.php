@@ -28,7 +28,7 @@
                                     echo Form::close();
                                     ?>
                                     
-                                    <a class='' href='/admin/polls'>Alle resultaten</a>
+                                    <a class='' href='/admin/polls'>All results</a>
                             </div> 
                             <div class="panel-body">
                                 <div id="createPoll" class="modal fade" role="dialog">
@@ -93,11 +93,11 @@
                         </script> 
                         <div class="panel-body">
                             <!--de tabel die alle polls toont-->
-                            <table class="table table-striped table-bordered sorted_table">
+                            <table id='pollTable' class="table table-striped table-bordered sorted_table">
                                 <thead>
                                     <tr>
-                                        <th>Selecteer</th>
-                                        <th>Poll naam</th>
+                                        <th>Select</th>
+                                        <th>Poll name</th>
                                         <th>Category</th>
                                         <th>Actions</th>
                                     </tr>
@@ -323,6 +323,24 @@
                                     ?>
                                 </tbody>
                             </table>  
+                            <a class='btn btn-danger' style='margin:0px 0px 15px 15px;' id='bulk'>Delete selected polls</a>
+                            <!--bulk-->
+                            <script>  
+                                $("#bulk").click(function(){
+                                    var polls = $('#bulkcheck:checked').serializeArray();
+                                    console.log(polls);
+                                    $.ajax({
+                                        url: '/admin/polls/bulkdelete',
+                                        type: "post",
+                                        data: {'poll_ids':polls , 
+                                                '_token': $('input[name=_token]').val(),  
+                                            },
+                                        success: function(){
+                                            location.reload();
+                                            }
+                                    });  
+                                });
+                            </script>
                         </div>   
                     </div>
                     <!--categories-->
@@ -375,7 +393,7 @@
                                             },
                                         success: function(){
                                                 $('#CreateCatModal').modal('hide');
-                                                $('#catNameCol').append('<tr><td>'+naam+'</td><td>Refresh voor acties</td></tr>');
+                                                $('#catNameCol').append('<tr><td>'+naam+'</td><td>Refresh for actions</td></tr>');
                                             },
                                         error:function(message){     
                                                 var data = message.responseJSON;
@@ -393,7 +411,7 @@
                             <table class="table table-striped table-bordered sorted_table">
                                 <thead>
                                     <tr>
-                                        <th>Categorie naam</th>
+                                        <th>Category name</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -522,13 +540,13 @@
                         <table class="table table-sm">
                             <thead>
                                 <tr>
-                                    <th>Actie</th>
-                                    <th>Uitvoeren</th>
+                                    <th>Description</th>
+                                    <th>Carry out</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">Percentages af/aanzetten</th>
+                                    <th scope="row">Enable/disable percentages</th>
                                     <th> <?php 
                                         echo Form::open(array('action' => array('AdminController@disablePercentage')));
                                         if($percentageSetting->value == 'true'){
@@ -542,7 +560,7 @@
                                     </th>
                                 </tr>
                                 <tr>
-                                    <th scope="row">Geef complete polls een andere look</th>
+                                    <th scope="row">Give completed polls a different look</th>
                                     <td> <?php 
                                         echo Form::open(array('action' => array('AdminController@changePollLookAfterComplete')));                    
                                         if($lookSetting->value == '1'){
@@ -559,24 +577,7 @@
                     </div>
                     </div>  
                     <!--einde van tab content-->
-                    <a class='btn btn-danger' style='margin:0px 0px 15px 15px;' id='bulk'>Delete selected polls</a>
-                    <!--bulk-->
-                    <script>  
-                        $("#bulk").click(function(){
-                            var polls = $('#bulkcheck:checked').serializeArray();
-                            console.log(polls);
-                            $.ajax({
-                                url: '/admin/polls/bulkdelete',
-                                type: "post",
-                                data: {'poll_ids':polls , 
-                                        '_token': $('input[name=_token]').val(),  
-                                    },
-                                success: function(){
-                                   
-                                    }
-                            });  
-                        });
-                    </script>
+                  
                 </div>
             </div>
         </div>

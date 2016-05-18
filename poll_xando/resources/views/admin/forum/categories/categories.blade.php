@@ -10,8 +10,8 @@
                 </div>
                 <table class="table table-striped table-bordered sorted_table" style="width:100%">
                     <tr>
-                        <th>Categorie</th>
-                        <th>Aantal topics</th>
+                        <th>Category</th>
+                        <th>Amount of topics</th>
                         <th>Actions</th> 
                     </tr>
                 <?php 

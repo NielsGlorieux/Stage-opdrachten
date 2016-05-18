@@ -6,7 +6,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Admin forum - Topic - <?php echo $topic->subject?></div>
                     <div id='links'>
-                        <a href='/admin/forum/categories/<?php echo $topic->a_f_category_id; ?>'>Ga terug</a>
+                        <a href='/admin/forum/categories/<?php echo $topic->a_f_category_id; ?>'>Go back</a>
                     </div>
                     <div id="topicnav">
                         From:<?php   
@@ -16,7 +16,7 @@
                                 echo 'deleted';
                             }
                         ?><br>
-                        Aantal posts:<?php 
+                        Amount of posts:<?php 
                             if(isset($topic->user)){
                                 echo count($topic->user->topics()); 
                             }else{

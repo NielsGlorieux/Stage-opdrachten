@@ -7,6 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Home</div>
                 <div class="panel-body">
+                    <!--[shortcode_hello]-->
 
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-default">

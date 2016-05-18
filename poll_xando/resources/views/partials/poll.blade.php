@@ -62,7 +62,7 @@ $percentageSetting = App\Settings::where('name','percentages')->first();
                         if($poll->maxVotes != 0 && $poll->maxVotes != -1){
                             echo Form::label('Percentage', floor(($totaleScore/$poll->maxVotes)*100) . "%",array('id'=>'percent'.$poll->id));?> <br> <?php
                         }else if($poll->maxVotes == -1){
-                            echo Form::label('Percentage', "geen maximum aangeduid",array('id'=>'percent'.$poll->id));?> <br> <?php
+                            echo Form::label('Percentage', "no maximum given",array('id'=>'percent'.$poll->id));?> <br> <?php
                         }else{
                             echo Form::label('Percentage', "100%",array('id'=>'percent'.$poll->id));?> <br> <?php
                         }

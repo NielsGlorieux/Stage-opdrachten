@@ -55,7 +55,7 @@
                         echo Form::text('term', null, array('class'=>'form-control', 'placeholder'=> 'search a user..', 'style'=>'width: 250px;'));
                         echo Form::close();
                         ?>
-                        <a class='' href='/admin/users'>Alle resultaten</a>
+                        <a class='' href='/admin/users'>All results</a>
 
                 </div> 
                 
@@ -63,8 +63,8 @@
                 <table id='userTable' class="table table-striped table-bordered sorted_table">
                     <thead>
                         <tr>
-                            <th>naam</th>
-                            <th>rol</th>
+                            <th>name</th>
+                            <th>role</th>
                             <th>email</th>
                             <th>Actions</th>
                         </tr>

@@ -6,7 +6,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Admin forum - Topics of <?php echo $cat->name?></div>
                 <div id='links'>
-                    <a href='/admin/forum/categories'>Ga terug naar categorieën</a><br>
+                    <a href='/admin/forum/categories'>Go back to categories</a><br>
                     <a href="/admin/forum/categories/<?php echo $cat->name;?>/create">Create a topic</a><br>
                 </div>
                 <?php
@@ -15,7 +15,7 @@
                 <table class="table table-striped table-bordered sorted_table" style="width:100%">
                 <tr>
                     <th>Topic</th>
-                    <th>Aangemaakt door</th>
+                    <th>Posted by</th>
                     <th>Actions</th>
                 </tr>
                 <?php 
